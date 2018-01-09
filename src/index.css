@@ -62,8 +62,12 @@ h3 {
 }
 
 .incomplete .nav-link:hover{
-  background-color: #0275d8;
+  background-color: #0275d880;
   color: white;
+}
+
+.incomplete > .nav-link.active{
+  background-color: #0275d8;
 }
 
 .incomplete a:hover p {
@@ -108,8 +112,9 @@ h3 {
   color: #c9302c;
 }
 
+
 .priority .nav-link:hover{
-  background-image: linear-gradient(to bottom, #c9302c 0, #c9302c 100%);
+  background-color: #c9302c7a ;
 }
 
 .priority > .nav-link.active{

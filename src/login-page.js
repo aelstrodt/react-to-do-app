@@ -13,12 +13,12 @@ class LogInPage extends React.Component {
 
   onChange({ target }){
     this.setState({
-      [target.id]: target.value
+      [target.name]: target.value
     });
   }
 
   submit({ target }){
-    if(target.id === 'createUser'){
+    if(target.name === 'create-user'){
       this.props.createUser(this.state);
     } else{
       this.props.logInUser(this.state);
@@ -41,6 +41,7 @@ class LogInPage extends React.Component {
             <input
               type="text"
               id="email"
+              name="email"
               value={this.state.email}
               onChange={this.onChange}
               className="form-control"
@@ -51,14 +52,15 @@ class LogInPage extends React.Component {
               <input
                 type="password"
                 id="password"
+                name="password"
                 value={this.state.password}
                 onChange={this.onChange}
                 className="form-control"
                 placeholder="Enter password"/>
               </div>
               <div id="auth-btns">
-                <button className="btn btn-primary" type="submit" id="logUserIn" onClick={this.submit}>Login</button>
-                <button className="btn btn-secondary" type="submit" id="createUser" onClick={this.submit}>Create User</button>
+                <button className="btn btn-primary" type="submit" id="logUserIn" name="log-in" onClick={this.submit}>Login</button>
+                <button className="btn btn-secondary" type="submit" id="createUser" name="create-user" onClick={this.submit}>Create User</button>
               </div>
             </div>
           </div>
