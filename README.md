@@ -1,4 +1,3 @@
-﻿## React To-Do app
-
+## React To-Do app
 
 React to-do app with Firebase.

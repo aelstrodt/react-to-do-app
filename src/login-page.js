@@ -3,19 +3,30 @@ import React from 'react';
 class LogInPage extends React.Component {
   constructor(props){
     super(props);
-    this.state = {};
+    this.state = {
+      email: '',
+      password: ''
+    };
     this.submit = this.submit.bind(this);
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange({ target }){
+    this.setState({
+      [target.id]: target.value
+    });
   }
 
   submit({ target }){
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const cred = {email: email, password: password};
     if(target.id === 'createUser'){
-      this.props.createUser(cred);
+      this.props.createUser(this.state);
     } else{
-      this.props.logInUser(cred);
+      this.props.logInUser(this.state);
     }
+    this.setState({
+      email: '',
+      password: ''
+    });
   }
 
   render() {
@@ -30,6 +41,8 @@ class LogInPage extends React.Component {
             <input
               type="text"
               id="email"
+              value={this.state.email}
+              onChange={this.onChange}
               className="form-control"
               placeholder="Enter email"/>
             </div>
@@ -38,6 +51,8 @@ class LogInPage extends React.Component {
               <input
                 type="password"
                 id="password"
+                value={this.state.password}
+                onChange={this.onChange}
                 className="form-control"
                 placeholder="Enter password"/>
               </div>
