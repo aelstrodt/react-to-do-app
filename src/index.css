@@ -1,13 +1,14 @@
 h1 {
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .container-fluid {
-  margin-top: 50px;
   max-width: 600px;
   min-width: 100px;
 }
+
+
 
 #logIn{
   padding: 0 20px;
@@ -24,11 +25,11 @@ h1 {
 }
 
 #createTask {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 #taskList {
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 0 0;
 }
 
@@ -38,7 +39,7 @@ h1 {
 
 #logOut{
   float: right;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 #dueDate{
@@ -81,6 +82,11 @@ h3 {
 .nav-tabs > .nav-item{
   font-size: 18px;
   font-weight: bolder;
+}
+
+.flex-column {
+  overflow-y: scroll;
+  height: 470px;
 }
 
 .incomplete > a.active > h3 {
@@ -128,7 +134,7 @@ h3 {
 }
 
 .incomplete {
-  margin-bottom: -35px;
+  margin-bottom: -37px;
 }
 
 #markAsComplete{

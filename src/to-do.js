@@ -118,7 +118,7 @@ class ToDo extends React.Component {
   render(){
     return (
       this.state.logged_in ?
-      <div className="container">
+      <div className="container" id="view">
         <header className="page-header">
           <h1 className='display-4'>To-Do List</h1>
         </header>
