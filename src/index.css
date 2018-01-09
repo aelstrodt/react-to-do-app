@@ -1,0 +1,169 @@
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container-fluid {
+  margin-top: 50px;
+  max-width: 600px;
+  min-width: 100px;
+}
+
+#logIn{
+  padding: 0 20px;
+  margin: 80px auto;
+  max-width: 400px;
+}
+
+#auth-btns{
+  margin-top: 25px;
+}
+
+#createUser{
+  margin-left: 20px;
+}
+
+#createTask {
+  margin: 20px 0;
+}
+
+#taskList {
+  margin: 20px 0;
+  padding: 0 0;
+}
+
+#closeTask{
+  float: right;
+}
+
+#logOut{
+  float: right;
+  margin: 20px 0;
+}
+
+#dueDate{
+  float: right;
+  font-size: 30px;
+  display: absolute;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.complete a{
+  color: grey;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+.incomplete h3 {
+  color: black;
+}
+
+.incomplete .nav-link:hover{
+  background-color: #0275d8;
+  color: white;
+}
+
+.incomplete a:hover p {
+  color: white;
+}
+
+.incomplete a:hover h3, .incomplete a:hover .lateTask {
+  color: white;
+}
+
+.nav-tabs > .nav-item{
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.incomplete > a.active > h3 {
+  color: white;
+}
+
+.incomplete > a.active > p {
+  color:white;
+}
+
+.complete a:hover{
+  background-color: #8080804a;
+  color: #464a4c;
+}
+
+.complete > a.active{
+  background-image: linear-gradient(to bottom, #ccc 0, #ccc 100%);
+}
+.complete > a.active > h3, p {
+  color: #464a4c;
+}
+
+.form-group label {
+  font-weight: bolder;
+  margin-left: 5px;
+}
+
+.lateTask {
+  color: #c9302c;
+}
+
+.priority .nav-link:hover{
+  background-image: linear-gradient(to bottom, #c9302c 0, #c9302c 100%);
+}
+
+.priority > .nav-link.active{
+  background-image: linear-gradient(to bottom, #c9302c 0, #c9302c 100%);
+}
+.priority > .btn-secondary{
+}
+
+.incomplete > .nav-link{
+  padding-bottom: 60px;
+}
+
+.incomplete {
+  margin-bottom: -35px;
+}
+
+#markAsComplete{
+  position: relative;
+  top: -55px;
+  left: 15px;
+}
+
+p {
+ margin: 10px 0;
+ word-wrap: break-word;
+}
+
+#createUser, #logUserIn {
+  width: 120px;
+}
+
+#newTaskDiv{
+  padding: 0 20px;
+}
+
+@media (max-width: 450px) {
+  .display-4{
+    font-size: 40px;
+  }
+  #logIn{
+    margin-top: 40px;
+  }
+  #createUser {
+    display: block;
+    margin: 20px auto
+  }
+  #logUserIn {
+    display: block;
+    margin: 20px auto;
+  }
+  #dueDate{
+    font-size: 25px;
+  }
+  .nav-tabs > .nav-item{
+    font-size: 15px;
+  }
+}
